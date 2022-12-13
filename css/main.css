@@ -1,0 +1,21 @@
+@media all {
+
+}
+
+@media screen {
+
+    .container {width: 1020px; margin: 0 auto;}
+
+    /* Header */ 
+    header {background: url(../assets/city-skate-hero.webp) no-repeat center/cover; min-height: 567px;}
+
+}
+
+@media screen and (max-width: 1020px) {
+
+
+}
+
+@media print {
+
+}
