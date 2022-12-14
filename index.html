@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="container">
-        <header class="image">
+        <header class="image" aria-label="A skateboarder riding through the city at night.">
             <div>
                 <a href="#" class="logo">City Skate</a>
-                <nav>
+                <nav aria-label="primary">
                     <ul>
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">Videos</li>
@@ -24,29 +24,39 @@
         </header>
 
         <main>
-            <section class="banned">
-                <h2>Banned from riding... shut up and skate</h2>
+            <section class="banned" aria-labelledby="bannedHdr">
+                <h2 id="bannedHdr">Banned from riding... shut up and skate</h2>
                 <p>How cities are taking down skating</p>
             </section>
 
             <div class="collage">
-                <div class="vintageImage image"></div>
-                <secton class="vintageDecks">
-                    <h2>Vintage Decks</h2>
+                <div class="vintageImage image">
+                    <span class="imageDesc">A close up of an individual about to drop in.</span>
+                </div>
+                <div class="sunset image">
+                    <span class="imageDescr">Someone mid kickflip during the sunset.</span>
+                </div>
+                <div class="daytime image">
+                    <span class="imageDescr">An individual locked in to a 50-50.</span>
+                </div>
+                <div class="blurred image">
+                    <span class="imageDescr">A guy about to ollie onto a ledge.</span>
+                </div>
+                <secton class="vintageDecks" aria-labelledby="vintageDecksHdr">
+                    <h2 id="vintageDecksHdr">Vintage Decks</h2>
                     <p>Our collection of vintage decks are legendary. You could own a piece of skateboarding history.</p>
-                    <div class="skateboardIcon image"></div>
+                    <div class="skateboardIcon image">
+                        <span class="imageDescr">Skateboard icon</span>
+                    </div>
                 </secton>
-                <div class="sunset image"></div>
-                <div class="daytime image"></div>
-                <div class="blurred image"></div>
-                <section class="skateShoes">
-                    <h2>Rare Skate Shoes</h2>
+                <section class="skateShoes" aria-labelledby="skateShoesHdr">
+                    <h2 id="skateShoesHdr">Rare Skate Shoes</h2>
                     <p>You think your kicks are what's on? The master collector of old school, super teched out pairs shares her favorite pieces.</p>
                 </section>
             </div>
             
-            <section>
-                <h2>Longboards</h2>
+            <section class="longboards" aria-labelledby="longboardHdr">
+                <h2 id="longboardHdr">Longboards</h2>
                 <ul class="longboards">
                     <li>
                         <a href="#" class="trucksImage"></a>
@@ -69,7 +79,7 @@
 
             </section>
 
-            <nav class="secondaryNav">
+            <nav class="secondaryNav" aria-label="secondary">
                 <ul>
                     <li>Shop</li>
                     <li>Videos</li>
@@ -87,10 +97,10 @@
             </nav>
 
             <section class="socialMedia">
-                <a href="https://www.instagram.com"></a>
-                <a href="https://www.youtube.com"></a>
-                <a href="https://www.twitter.com"></a>
-                <p>&copy; Copyright 2020</p>
+                <a href="https://www.instagram.com" aria-label="Go to our instagram."></a>
+                <a href="https://www.youtube.com" aria-label="Go to our youtube."></a>
+                <a href="https://www.twitter.com" aria-label="Go to our twitter."></a>
+                <p role="contentinfo">&copy; Copyright 2020</p>
             </section>
         </footer>
     </div>
