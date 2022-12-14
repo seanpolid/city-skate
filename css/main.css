@@ -1,37 +1,46 @@
 @media all {
 
     body, ul {padding: 0; margin: 0;}
-    header {box-sizing: content-box;}
 
 }
 
 @media screen {
 
+    /* General */
     .container {width: 1020px; margin: 0 auto;}
     a {color: #fff; text-decoration: none;}
-
-    .banned, .vintage {font-family: 'Open Sans', sans-serif;}
+    h2, p {text-align: center;}
+    header {box-sizing: content-box;}
+    header .logo, .banned p, .collage h2 {text-transform: uppercase;}
+    .banned, .vintageDecks, .skateShoes {box-sizing: border-box;}
+    .banned, .collage {font-family: 'Open Sans', sans-serif;}
+    .banned, .vintageDecks, .skateShoes {display: flex; flex-direction: column; justify-content: start; align-items: center;}
+    .image {background-repeat: no-repeat; background-size: cover; background-position: center;}
 
     /* Header */ 
-    header {background: url(../assets/city-skate-hero.webp) no-repeat center/cover; height: 567px; border-bottom: 7px solid #F18606;}
+    header {background-image: url(../assets/city-skate-hero.webp); height: 567px; border-bottom: 7px solid #F18606;}
     header div {font-weight: 400; padding: 14px 29px; font-family: 'Righteous', cursive; display: flex; flex-direction: row; justify-content: space-between;}
-    header .logo {text-transform: uppercase; font-size: 36px;}
+    header .logo {font-size: 36px;}
     header ul {list-style: none; display: flex; gap: 7px; font-size: 36px; justify-content: end;}
     
     /* Banned */
-    .banned {height: 390px; display: flex; flex-direction: column; align-items: center; justify-content: start; padding: 110px; box-sizing: border-box; gap: 17px;}
-    .banned h2 {text-transform: lowercase; font-weight: 300; font-size: 1.61rem; text-align: center;}
-    .banned p {font-size: 14px; text-transform: uppercase; font-weight: 700; text-align: center;}
+    .banned {height: 390px; padding: 110px; gap: 17px;}
+    .banned h2 {text-transform: lowercase; font-weight: 300; font-size: 1.61rem;}
+    .banned p {font-size: 14px; font-weight: 700;}
 
     /* Collage */
     .collage {position: relative;}
-    .vintageImage {background: url(../assets/vintage-decks.webp) no-repeat center/cover; height: 340px; width: 680px;}
-    .vintage {position: absolute; top: 0; right: 0; width: 340px; background: #000; color: #fff; height: 530px; display: flex; flex-direction: column; align-items: center; justify-content: start; padding: 143px 60px 0; box-sizing: border-box; gap: 0;}
-    .vintage h2 {font-size: 16px; margin: 0; text-transform: uppercase;}
-    .vintage p {text-align: center; font-size: 14px; line-height: 2.6; margin-top: 8px;}
-    .sunset {background: url(../assets/skateboarder-sunset-silhouette.webp) no-repeat center/cover; width: 340px; height: 504px; position: absolute;}
-    .daytime {background: url(../assets/skateboarder-daytime.webp) no-repeat center/cover; width: 680px; height: 504px; right: 0; position: absolute; z-index: -1;} 
-    .blurred {background: url(../assets/skateboarder-blurred-motion.webp) no-repeat center/cover; width: 1020px; height: 538px; position: absolute; top: 844px;}
+    .vintageDecks, .sunset, .daytime, .blurred, .skateShoes {position: absolute;}
+    .vintageDecks, .skateShoes {background: #000; color: #fff; z-index: 10;}
+    .collage h2 {font-size: 16px; margin: 0;}
+    .collage p {font-size: 14px; line-height: 2.6; margin-top: 8px;}
+    .vintageImage {background-image: url(../assets/vintage-decks.webp); height: 340px; width: 680px;}
+    .vintageDecks {top: 0; right: 0; width: 340px; height: 530px; padding: 144px 60px 0; gap: 0;}
+    .skateboardIcon {background-image: url(../assets/skateboard-icon.png); position: absolute; width: 142px; height: 48px; top: 369px;}
+    .sunset {background-image: url(../assets/skateboarder-sunset-silhouette.webp); width: 340px; height: 504px;}
+    .daytime {background-image: url(../assets/skateboarder-daytime.webp); width: 680px; height: 504px; right: 0;} 
+    .blurred {background-image: url(../assets/skateboarder-blurred-motion.webp); width: 1020px; height: 538px; top: 844px;}
+    .skateShoes {width: 340px; height: 320px; top: 755px; padding: 83px 50px 0;}
 }
 
 @media screen and (max-width: 1020px) {
