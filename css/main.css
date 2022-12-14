@@ -20,6 +20,7 @@
     .banned, .collage {font-family: 'Open Sans', sans-serif;}
     .banned, .vintageDecks, .skateShoes {display: flex; flex-direction: column; justify-content: start; align-items: center;}
     .image {background-repeat: no-repeat; background-size: cover; background-position: center;}
+    .imageDescr {font-size: 0; height: 0; width: 0;}
 
     /* Header */ 
     header {background-image: url(../assets/city-skate-hero.webp); height: 567px; border-bottom: var(--border);}
@@ -39,12 +40,15 @@
     .collage h2 {font-size: 16px; margin: 0;}
     .collage p {font-size: 14px; line-height: 2.6; margin-top: 8px;}
     .vintageImage {background-image: url(../assets/vintage-decks.webp); height: 340px; width: 680px;}
-    .vintageDecks {top: 0; right: 0; width: 340px; height: 530px; padding: 143px 60px 0; gap: 0;}
+    .vintageDecks {top: 0; right: 0; width: 340px; height: 528px; padding: 143px 60px 0; gap: 0;}
     .skateboardIcon {background-image: url(../assets/skateboard-icon.png); position: absolute; width: 142px; height: 48px; top: 367px;}
     .sunset {background-image: url(../assets/skateboarder-sunset-silhouette.webp); width: 340px; height: 504px;}
     .daytime {background-image: url(../assets/skateboarder-daytime.webp); width: 680px; height: 504px; right: 0;} 
     .blurred {background-image: url(../assets/skateboarder-blurred-motion.webp); width: 1020px; height: 538px; top: 844px;}
-    .skateShoes {width: 340px; height: 320px; top: 755px; padding: 80px 50px 0;}
+    .skateShoes {width: 340px; height: 318px; top: 755px; padding: 80px 50px 0;}
+
+    /* Longboard */
+
 }
 
 @media screen and (max-width: 1020px) {
