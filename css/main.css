@@ -30,7 +30,7 @@
     header div {font-weight: 400; padding: 14px 29px; display: flex; flex-direction: row; justify-content: space-between;}
     header .logo {font-size: 36px;}
     header ul {list-style: none; display: flex; gap: 7px; font-size: 36px; justify-content: end;}
-    header a:hover {color: #F18606;}
+    header nav a:hover {color: #F18606;}
     
     /* Banned */
     .banned {height: 392px; padding: 132px; gap: 17px; }
