@@ -154,8 +154,8 @@
     .skateShoes {width: 100%; height: auto; padding: 80px 40px; position: static;}
     .blurredImage {display: block; height: 340px;}
 
-    /* Longboards */
-    .longboards {padding-left: 60px; padding-right: 60px;}
+    /* Longboards & footer */
+    .longboards, footer {padding-left: 60px; padding-right: 60px;}
     .longboards ul {grid-template-columns: 1fr; gap: 70px;}
 
 }
