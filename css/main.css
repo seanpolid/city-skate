@@ -36,7 +36,8 @@
     /* Banned */
     .banned {height: 392px; padding: 132px; gap: 17px; }
     .banned h2 {text-transform: lowercase; font-weight: 300; font-size: 1.61rem;}
-    .banned a {font-size: 14px; font-weight: 700; margin-top: 35px; color: var(--secondaryColor)}
+    .banned a {font-size: 14px; font-weight: 700; margin-top: 31px; color: var(--secondaryColor)}
+    .banned a:hover {color: #F18606;}
 
     /* Collage */
     .collage {position: relative; border-bottom: var(--border); height: 1381px;}
@@ -55,7 +56,7 @@
     /* Longboard */
     .longboards {border-bottom: var(--border); padding: 70px 80px 95px;}
     .longboards h2 {font-size: 40px;}
-    .longboards ul {margin-top: 40px; display: grid; list-style: none; gap: 40px; grid-template-columns: repeat(3, 1fr); width: 100%;}
+    .longboards ul {margin-top: 42px; display: grid; list-style: none; gap: 40px; grid-template-columns: repeat(3, 1fr); width: 100%;}
     .longboards li {gap: 18px; font-size: 23px; font-weight: 700;}
     .longboards a {color: var(--secondaryColor);}
     .trucksImage {background-image: url(../assets/trucks.webp); width: 100%; height: 220px;}
@@ -63,7 +64,7 @@
     .wheelsImage {background-image: url(../assets/wheels.webp); width: 100%; height: 220px;}
     
     /* Footer */
-    footer {background: #999999; height: 215px; display: grid; padding: 40px 0px 0; grid-template-columns: 1fr 1fr 1fr 1fr; font-weight: 700;}
+    footer {background: #999999; height: 215px; display: grid; padding: 35px 0px 0; grid-template-columns: 1fr 1fr 1fr 1fr; font-weight: 700;}
     footer a:hover {color: #e6e6e6;}
     footer h2, footer a, footer .socialMedia {padding: 0; color: black;}
     footer ul {list-style: none; gap: 14px;}
@@ -72,7 +73,7 @@
     footer .contact h2 {margin: 0; text-align: left; font-size: 14px;}
     footer .secondaryNav {margin-left: 22px; gap: 30px;}
     footer .secondaryLongboardNav {margin-left: -30px;}
-    .socialMedia {display: flex; gap: 23px; margin: -2px 0 0 4px;}
+    .socialMedia {display: flex; gap: 23px; margin-left: 4px;}
     .icon {display: inline-block; height: 39px;}
     .instagramIcon {background: url(../assets/social-media.webp) 0px; width: 38px;}
     .youtubeIcon {background: url(../assets/social-media.webp) -62px; width: 44px;}
@@ -104,12 +105,14 @@
     header nav {display: none;}
     .hamburgerMenu {display: block; color: var(--primaryColor); text-decoration: none; padding: 12px 0;}
     .daytime {background-position-x: 40%;}
+    .vintageDecks {padding-top: 70px; height: 440px;}
+    .skateboardIcon {top: 310px;}
 
 }
 
 @media screen and (max-width: 720px) {
     
-    .vintageDecks {padding-top: 110px;}
+    
     .skateShoes {padding-top: 60px;}
 }
 
