@@ -34,23 +34,23 @@
     .hamburgerMenu {display: none;}
     
     /* Banned */
-    .banned {height: 392px; padding: 132px; gap: 17px; }
+    .banned {padding: 132px 29px 156px; gap: 17px;}
     .banned h2 {text-transform: lowercase; font-weight: 300; font-size: 1.61rem;}
     .banned a {font-size: 14px; font-weight: 700; margin-top: 31px; color: var(--secondaryColor)}
     .banned a:hover {color: #F18606;}
 
     /* Collage */
-    .collage {position: relative; border-bottom: var(--border); height: 1381px;}
-    .vintageDecks, .sunset, .daytime, .blurred, .skateShoes {position: absolute;}
+    .collage {position: relative; border-bottom: var(--border);}
+    .vintageDecks, .skateShoes {position: absolute;}
     .vintageDecks, .skateShoes {background: #000; color: var(--primaryColor); z-index: 10;}
     .collage h2 {font-size: 16px;}
     .collage p {font-size: 14px; line-height: 2.6; margin-top: 8px;}
     .vintageImage {background-image: url(../assets/vintage-decks.webp); height: 340px; width: 680px;}
     .vintageDecks {top: 0; right: 0; width: 340px; height: 528px; padding: 143px 60px 0; gap: 0;}
     .skateboardIcon {background-image: url(../assets/skateboard-icon.png); position: absolute; width: 142px; height: 48px; top: 367px;}
-    .sunset {background-image: url(../assets/skateboarder-sunset-silhouette.webp); width: 340px; height: 504px;}
-    .daytime {background-image: url(../assets/skateboarder-daytime.webp); width: 680px; height: 504px; right: 0;} 
-    .blurred {background-image: url(../assets/skateboarder-blurred-motion.webp); width: 1020px; height: 538px; top: 844px;}
+    .sunset {background-image: url(../assets/skateboarder-sunset-silhouette.webp); width: 340px; height: 504px; display: block; float: left;}
+    .daytime {background-image: url(../assets/skateboarder-daytime.webp); width: 680px; height: 504px; right: 0; display: block; float: left;} 
+    .blurred {background-image: url(../assets/skateboarder-blurred-motion.webp); width: 1020px; height: 538px; display: block; clear: left;}
     .skateShoes {width: 340px; height: 318px; top: 755px; padding: 80px 50px 0;}
 
     /* Longboard */
@@ -64,15 +64,15 @@
     .wheelsImage {background-image: url(../assets/wheels.webp); width: 100%; height: 220px;}
     
     /* Footer */
-    footer {background: #999999; height: 215px; display: grid; padding: 35px 0px 0; grid-template-columns: 1fr 1fr 1fr 1fr; font-weight: 700;}
+    footer {background: #999999; display: grid; padding: 35px 0px 47px; grid-template-columns: repeat(4, 1fr); font-weight: 700;}
     footer a:hover {color: #e6e6e6;}
     footer h2, footer a, footer .socialMedia {padding: 0; color: black;}
     footer ul {list-style: none; gap: 14px;}
-    footer .contact, footer ul, footer.socialMedia {display: flex; flex-direction: column;}
-    footer .contact {margin-left: 75px; gap: 18px;} 
-    footer .contact h2 {margin: 0; text-align: left; font-size: 14px;}
-    footer .secondaryNav {margin-left: 22px; gap: 30px;}
-    footer .secondaryLongboardNav {margin-left: -30px;}
+    .contact, footer ul, footer.socialMedia {display: flex; flex-direction: column;}
+    .contact {margin-left: 75px; gap: 18px;} 
+    .contact h2 {margin: 0; text-align: left; font-size: 14px;}
+    .secondaryNav {margin-left: 22px; gap: 30px;}
+    .secondaryLongboardNav {margin-left: -30px;}
     .socialMedia {display: flex; gap: 23px; margin-left: 4px;}
     .icon {display: inline-block; height: 39px;}
     .instagramIcon {background: url(../assets/social-media.webp) 0px; width: 38px;}
@@ -94,16 +94,25 @@
 
 @media screen and (max-width: 900px) {
 
+    footer {padding: 70px 80px;}
     .vintageDecks {padding-left: 40px; padding-right: 40px;}
     .skateShoes {padding-left: 25px; padding-right: 25px;}
     .longboards ul {grid-template-columns: 1fr 1fr;}
+    footer {grid-template-columns: repeat(3, 1fr); gap: 40px;} 
+    .contact, .secondaryNav, .secondaryLongboardNav, .socialMedia {margin: 0;}
+    .secondaryNav {grid-column: 1/2; grid-row: 1/2;}
+    .secondaryLongboardNav {grid-column: 1/2; grid-row: 2/3;}
+    .contact {grid-column: 3/4; grid-row: 1/2;}
+    footer section:last-child {grid-column: 3/4; grid-row: 2/3;}
+    footer section:last-child p {text-align: left;}
+
 }
 
 @media screen and (max-width: 800px) {
 
     header div {align-items: center;}
     header nav {display: none;}
-    .hamburgerMenu {display: block; color: var(--primaryColor); text-decoration: none; padding: 12px 0;}
+    .hamburgerMenu {display: block; color: var(--primaryColor); text-decoration: none; padding: 12px 0; background: transparent; cursor: pointer; border: 0;}
     .daytime {background-position-x: 40%;}
     .vintageDecks {padding-top: 70px; height: 440px;}
     .skateboardIcon {top: 310px;}
@@ -112,22 +121,33 @@
 
 @media screen and (max-width: 720px) {
     
-    
     .skateShoes {padding-top: 60px;}
 }
 
 @media screen and (max-width: 650px) {
     
-    .collage {height: auto;}
     .vintageImage {width: 100%;}
-    .vintageDecks {position: relative; width: 100%; height: 300px; padding: 60px 40px;}
-    .skateboardIcon {top: 200px;}
-    .sunset {position: static;  width: 50%; float: left; height: 300px; background-position-y: 20%;}
-    .daytime {position: static; width: 50%; float: left; background-position: 20%; height: 300px;}
-    .skateShoes {position: static; width: 100%; height: 275px; padding: 80px 40px;}
-    .blurred {position: static; width: 100%; display: block; height: 340px;}
+    .vintageDecks {position: relative; width: 100%; height: 310px; padding: 60px 50px;}
+    .skateboardIcon {top: 220px;}
+    .banned {padding: 112px 29px 136px;}
+    .sunset {width: 50%; float: left; height: 300px; background-position-y: 20%;}
+    .daytime {width: 50%; float: left; background-position: 20%; height: 300px;}
+    .skateShoes {width: 100%; height: 300px; padding: 80px 40px; position: static;}
+    .blurred {display: block; height: 340px;}
     .longboards {padding-left: 60px; padding-right: 60px;}
     .longboards ul {grid-template-columns: 1fr; gap: 70px;}
+
+}
+
+@media screen and (max-width: 500px) {
+
+    header .logo {font-size: 30px;}
+    footer {grid-template-columns: 1fr; gap: 60px;}
+    .secondaryNav, .secondaryLongboardNav, .contact, footer section:last-child {grid-column: auto;}
+    .secondaryNav {grid-row: 1/2;}
+    .secondaryLongboardNav {grid-row: 2/3;}
+    .contact {grid-row: 3/4;}
+    footer section:last-child {grid-row: 4/5;}
 
 }
 
