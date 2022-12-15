@@ -15,6 +15,8 @@
     .container {width: 1020px; margin: 0 auto;}
     body {color: var(--secondaryColor);}
     a {color: var(--primaryColor); text-decoration: none;}
+    a:focus, .hamburgerMenu:focus {outline-offset: 4px; outline: 2px solid #000;}
+    header a:focus, .hamburgerMenu:focus {outline: 2px solid #fff;}
     h2, p {text-align: center;}
     header .logo, .banned a, .collage h2, .longboards li, footer {text-transform: uppercase;}
     header div, .longboards {font-family: 'Righteous', cursive;}
@@ -124,7 +126,7 @@
     header nav ul {flex-direction: column; gap: 0;}
     header nav li {width: 100%;}
     header nav a {padding: 10px 30px 10px 15px; width: 100%; display: block; box-sizing: border-box; font-size: 28px;}
-    .hamburgerMenu {display: block; color: var(--primaryColor); text-decoration: none; padding: 12px 0; background: transparent; cursor: pointer; border: 0;}
+    .hamburgerMenu {display: block; color: var(--primaryColor); text-decoration: none; background: transparent; cursor: pointer; border: 0;}
     
     /* Collage */
     .vintageDecks {padding-top: 70px; height: 440px;}
