@@ -16,7 +16,6 @@
     body {color: var(--secondaryColor);}
     a {color: var(--primaryColor); text-decoration: none;}
     h2, p {text-align: center;}
-    header {box-sizing: content-box;}
     header .logo, .banned a, .collage h2, .longboards li, footer {text-transform: uppercase;}
     header div, .longboards {font-family: 'Righteous', cursive;}
     .banned, .vintageDecks, .skateShoes, .longboards, footer {box-sizing: border-box;}
@@ -26,7 +25,7 @@
     .imageDescr {font-size: 0; height: 0; width: 0;}
 
     /* Header */ 
-    header {background-image: url(../assets/city-skate-hero.webp); height: 567px; border-bottom: var(--border);}
+    header {background-image: url(../assets/city-skate-hero.webp); height: 567px;}
     header div {font-weight: 400; padding: 14px 30px; display: flex; flex-direction: row; justify-content: space-between;}
     header .logo {font-size: 36px;}
     header ul {list-style: none; display: flex; gap: 7px; font-size: 36px; justify-content: end;}
@@ -34,13 +33,14 @@
     .hamburgerMenu {display: none;}
     
     /* Banned */
+    .banned {border-top: var(--border);}
     .banned {padding: 132px 30px 156px; gap: 17px;}
     .banned h2 {text-transform: lowercase; font-weight: 300; font-size: 1.61rem;}
     .banned a {font-size: 14px; font-weight: 700; margin-top: 31px; color: var(--secondaryColor)}
     .banned a:hover {color: #F18606;}
 
     /* Collage */
-    .collage {position: relative; border-bottom: var(--border);}
+    .collage {position: relative;}
     .vintageDecks, .skateShoes {position: absolute;}
     .vintageDecks, .skateShoes {background: #000; color: var(--primaryColor); z-index: 10;}
     .collage h2 {font-size: 16px;}
@@ -54,7 +54,7 @@
     .skateShoes {width: 340px; height: 318px; top: 755px; padding: 80px 50px 0;}
 
     /* Longboard */
-    .longboards {border-bottom: var(--border); padding: 70px 80px 95px;}
+    .longboards {border-top: var(--border); border-bottom: var(--border); padding: 70px 80px 95px;}
     .longboards h2 {font-size: 40px;}
     .longboards ul {margin-top: 42px; display: grid; list-style: none; gap: 40px; grid-template-columns: repeat(3, 1fr); width: 100%;}
     .longboards li {gap: 18px; font-size: 23px; font-weight: 700;}
@@ -123,7 +123,7 @@
     header nav[class~="visible"] {display: block; position: absolute; right: 30px; top: 70px; background: #000; padding: 0; border-radius: 5px;}
     header nav ul {flex-direction: column; gap: 0;}
     header nav li {width: 100%;}
-    header nav a {padding: 10px 30px 10px 15px; width: 100%; display: block; box-sizing: border-box;}
+    header nav a {padding: 10px 30px 10px 15px; width: 100%; display: block; box-sizing: border-box; font-size: 28px;}
     .hamburgerMenu {display: block; color: var(--primaryColor); text-decoration: none; padding: 12px 0; background: transparent; cursor: pointer; border: 0;}
     
     /* Collage */
