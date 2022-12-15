@@ -122,7 +122,7 @@
     /* Header */
     header div {align-items: center;}
     header nav {display: none;}
-    header nav[class~="visible"] {display: block; position: absolute; right: 30px; top: 70px; background: #000; padding: 0; border-radius: 5px;}
+    header nav[class~="visible"] {display: block; position: absolute; right: 34px; top: 70px; background: #000; padding: 0; border-radius: 5px;}
     header nav ul {flex-direction: column; gap: 0;}
     header nav li {width: 100%;}
     header nav a {padding: 10px 30px 10px 15px; width: 100%; display: block; box-sizing: border-box; font-size: 28px;}
