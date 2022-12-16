@@ -74,7 +74,7 @@
     .contact {margin-left: 75px; gap: 18px;} 
     .contact h2 {margin: 0; text-align: left; font-size: 14px;}
     .secondaryNav {margin-left: 22px; gap: 30px;}
-    .secondaryLongboardNav {margin-left: -30px;}
+    .longboardNav {margin-left: -30px;}
     .socialMedia {display: flex; gap: 23px; margin-left: 4px;}
     .icon {display: inline-block; height: 39px;}
     .instagramIcon {background: url(../assets/social-media.webp) 0px; width: 38px;}
@@ -108,9 +108,9 @@
 
     /* Footer */
     footer {grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 70px 80px;} 
-    .contact, .secondaryNav, .secondaryLongboardNav, .socialMedia {margin: 0;}
+    .contact, .secondaryNav, .longboardNav, .socialMedia {margin: 0;}
     .secondaryNav {grid-column: 1/2; grid-row: 1/2;}
-    .secondaryLongboardNav {grid-column: 1/2; grid-row: 2/3;}
+    .longboardNav {grid-column: 1/2; grid-row: 2/3;}
     .contact {grid-column: 3/4; grid-row: 1/2;}
     footer section:last-child {grid-column: 3/4; grid-row: 2/3;}
     footer section:last-child p {text-align: left;}
@@ -169,9 +169,9 @@
 
     /* Footer */
     footer {grid-template-columns: 1fr; gap: 60px;}
-    .secondaryNav, .secondaryLongboardNav, .contact, footer section:last-child {grid-column: auto;}
+    .secondaryNav, .longboardNav, .contact, footer section:last-child {grid-column: auto;}
     .secondaryNav {grid-row: 1/2;}
-    .secondaryLongboardNav {grid-row: 2/3;}
+    .longboardNav {grid-row: 2/3;}
     .contact {grid-row: 3/4;}
     footer section:last-child {grid-row: 4/5;}
 
